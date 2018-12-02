@@ -134,7 +134,7 @@ app.put('/recipes/:id', jsonParser, (req, res) => {
     id: req.params.id,
     ingredients: req.body.ingredients
   });
-  res.status(204).end();
+  res.status(204).end(); // This worked after I shut down and restarted server (and pushed code)
 });
 
 app.delete('/recipes/:id', (req, res) => {
